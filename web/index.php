@@ -1,5 +1,5 @@
 <?php
+  $message = "hello";
+  echo $message;
 
-
-Hello
-
+?>
