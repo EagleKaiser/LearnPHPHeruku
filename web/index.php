@@ -2,10 +2,9 @@
     $authorName = "William Shakespeare";
     function setAuthorName()
     {
+        Global $authorName;
         $authorName = "Charles Dickens";
-        echo $authorName;
     }
     setAuthorName();
-    echo "<br>";
     echo $authorName;
     ?>
