@@ -1,7 +1,7 @@
 <?php
-    $quote = "To be or not to be, that is the question.";
-    $replaced = str_replace("be", "know", $quote)."<br>";
-    echo $replaced;
-    $replaced = str_replace("know", "be", $replaced, $count)."<br>";
-    echo $replaced."number of replaces= ".$count;
+    $quote = "Only those who will risk going too far can possibly find out how far one can go.";
+    echo substr($quote, 3)."<br>";
+    echo substr($quote, -5)."<br>";
+    echo substr($quote, 3, 5)."<br>";
+    echo substr($quote, 3, -5)."<br>";
     ?>
