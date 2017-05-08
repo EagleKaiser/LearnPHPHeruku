@@ -1,13 +1,8 @@
 <?php
-    function bookByAuthorYear($authorName)
-    {
-        echo $authorName;        
-    }
     function getAuthor()
     {
-        return "William Shakespeare";
+        echo "Charles Dickens";        
     }
-    bookByAuthorYear(getAuthor());
-    //output:
-    
+    $variableFunctionName = "getAuthor";
+    $variableFunctionName();
     ?>
