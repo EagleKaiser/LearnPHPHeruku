@@ -1,8 +1,7 @@
-print()
--------
-
 <?php
-print "without parentheses<br>";
-print ("with parentheses<br>");
-echo "can", "'t ", "be used ", "with ", "print";
-?>
+        $quote = "To be or not to be, that is the question.";
+        $quote = strtolower($quote);
+        echo $quote."<br>";
+        $quote = strtoupper($quote);
+        echo $quote
+        ?>
