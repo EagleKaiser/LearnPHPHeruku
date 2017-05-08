@@ -1,8 +1,13 @@
 <?php
-    $flaot = 1.234;
-    $scientific = 0.1234E4;
-    $scientific2 = 1234E-4;
-    var_dump($flaot);
-    var_dump($scientific);
-    var_dump($scientific2);
+    $bool = false;
+    $intHasValue = 1;
+    $intNoValue = 0;
+    $StringHasValue = "abc";
+    $StringNoValue = "";
+
+    var_dump($bool);
+    var_dump($intHasValue);
+    var_dump($intNoValue);
+    var_dump($StringHasValue);
+    var_dump($StringNoValue);
     ?>
