@@ -1,10 +1,8 @@
-<?php
-print <<<EOT
-    Be not afraid of greatness;
-    some are born great,
-    some achive greatness,
-    and others have greatness thrust upon them.
+print()
+-------
 
-                        -William Shakespeare
-EOT;
+<?php
+print "without parentheses<br>";
+print ("with parentheses<br>");
+echo "Et", " tu", ", ", "Brute", "!";
 ?>
