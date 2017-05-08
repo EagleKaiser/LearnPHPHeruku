@@ -12,8 +12,8 @@
         return "William Shakespeare";
     }
     
-    bookByAuthorYear($authorName);
-    bookByAuthorYear($authorName, $year);
+    bookByAuthorYear(getAuthor());
+    bookByAuthorYear(getAuthor(), $year);
     //output:
     
     ?>
