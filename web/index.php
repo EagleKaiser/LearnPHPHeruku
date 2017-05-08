@@ -3,7 +3,7 @@
 
     $intVar = 1234;
     $stringVar = "I'm a String";
-    $boolVar = false;
+    $boolVar = true;
     $floatVar = 12.34;
 
     echo is_int($intVar);
