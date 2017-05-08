@@ -1,5 +1,5 @@
 <?php
-echo <<<EOT
+print <<<EOT
     Be not afraid of greatness;
     some are born great,
     some achive greatness,
