@@ -7,7 +7,13 @@
         echo "<br>";
     }
     $year = 1920;
-    $authorName = "William Shakespeare";
+    function getAuthor()
+    {
+        return "William Shakespeare";
+    }
+    
     bookByAuthorYear($authorName);
     bookByAuthorYear($authorName, $year);
+    //output:
+    
     ?>
