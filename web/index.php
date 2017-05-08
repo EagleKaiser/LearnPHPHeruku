@@ -1,13 +1,8 @@
 <?php
-    $regInt = 1234;
-    $octNum = 01234;
-    $hexNum = 0xABC;
-    $binaryNum = 0b1000;
-
-    var_dump($regInt);
-    var_dump($octNum);
-    var_dump($hexNum);
-    var_dump($binaryNum);
-    //output: int(1234) 
-    
-?>
+    $flaot = 1.234;
+    $scientific = 0.1234E4;
+    $scientific2 = 1234E-4;
+    var_dump($flaot);
+    var_dump($scientific);
+    var_dump($scientific2);
+    ?>
