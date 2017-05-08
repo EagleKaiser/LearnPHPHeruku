@@ -1,5 +1,5 @@
 <?php
-    $quote = "To be or not to be, that is the question.";
+    $quote = "There is no great genius without a mixture of madness.";
     $length = strlen($quote);
     echo $length;
     //output: 54
