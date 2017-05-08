@@ -3,7 +3,7 @@
 
     function listOfBooks()
     {
-        echo 'Hamlet
-        Romeo and Juliet\n';
+        echo "Hamlet<br>";
+        echo "Romeo and Juliet\n";
     }
     ?>
