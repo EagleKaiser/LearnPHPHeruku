@@ -6,8 +6,8 @@
     $StringNoValue = "";
 
     var_dump($bool);
-    var_dump($intHasValue);
-    var_dump($intNoValue);
-    var_dump($StringHasValue);
-    var_dump($StringNoValue);
+    var_dump((bool)$intHasValue);
+    var_dump((bool)$intNoValue);
+    var_dump((bool)$StringHasValue);
+    var_dump((bool)$StringNoValue);
     ?>
