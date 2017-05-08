@@ -1,8 +1,7 @@
 <?php
-    $quote = "Courage is resistance to fear, mastery of fear, no absence of fear.";
-    echo strpos($quote, "fear")."<br>";
-    echo strpos($quote, "fear",26)."<br>";
-    echo strpos($quote, "c")."<br>";
-    echo strpos($quote, "C")."<br>";
-    echo strpos($quote, "z");
+    $quote = "To be or not to be, that is the question.";
+    $replaced = str_replace("be", "know", $quote)."<br>";
+    echo $replaced;
+    $replaced = str_replace("be", "know", $quote, $count)."<br>";
+    echo $replaced."<br>number of replaces= ".$count;
     ?>
