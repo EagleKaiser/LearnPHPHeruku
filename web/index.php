@@ -1,15 +1,9 @@
 <?php
-    define('CHECK_CONSTANT', "Yes, I am a constant!");
+    listOfBooks();
 
-    $intVar = 1234;
-    $stringVar = "I'm a String";
-    $boolVar = true;
-    $floatVar = 12.34;
-
-    echo is_int($intVar);
-    echo is_string($stringVar);
-    echo is_bool($boolVar);
-    echo is_float($floatVar);
-
-    echo defined('CHECK_CONSTANT');
+    function listOfBooks()
+    {
+        echo "Hamlet\n";
+        echo "Romeo and Juliet\n";
+    }
     ?>
