@@ -11,5 +11,5 @@
     echo is_bool($boolVar);
     echo is_float($floatVar);
 
-    echo define('CHECK_CONSTANT');
+    echo defined('CHECK_CONSTANT');
     ?>
