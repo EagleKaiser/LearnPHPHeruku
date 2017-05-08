@@ -1,9 +1,12 @@
 <?php
-    listOfBooks();
-
-    function listOfBooks()
+    function bookByAuthorYear($authorName, $year)
     {
-        echo "Hamlet<br>";
-        echo "Romeo and Juliet<br>";
+        echo $year;
+        echo "\n";
+        echo $authorName;
     }
+
+    $authorName = "William Shakespeare";
+    bookByAuthorYear($authorName, 1910);
+
     ?>
