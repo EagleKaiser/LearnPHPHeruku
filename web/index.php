@@ -6,10 +6,10 @@
     $boolVar = false;
     $floatVar = 12.34;
 
-    //echo is_int($floatVar);
-   // echo is_string($stringVar);
-    //echo is_bool($boolVar);
-    //echo is_float($floatVar);
+    echo is_int($intVar);
+    echo is_string($stringVar);
+    echo is_bool($boolVar);
+    echo is_float($floatVar);
 
-    echo define('NEW_CONSTANT');
+    echo define('CHECK_CONSTANT');
     ?>
