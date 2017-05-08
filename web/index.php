@@ -6,5 +6,6 @@
         echo $authorName;
     }
     setAuthorName();
+    echo <br>;
     echo $authorName;
     ?>
