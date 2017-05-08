@@ -1,12 +1,12 @@
 <?php
-    function bookByAuthorYear($authorName, $year)
+    function bookByAuthorYear($tempAuthorName, $tempYear = 1910)
     {
-        echo $year;
-        echo "\n";
-        echo $authorName;
+        echo $tempYear;
+        echo "<br>";
+        echo $tempAuthorName;
+        echo "<br>";
     }
-
+    $year = 1920;
     $authorName = "William Shakespeare";
-    bookByAuthorYear($authorName, 1910);
-
+    bookByAuthorYear($authorName);
     ?>
