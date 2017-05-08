@@ -1,8 +1,10 @@
-<?php
-    function getAuthor()
+ <?php
+    $authorName = "William Shakespeare";
+    function setAuthorName()
     {
-        echo "Charles Dickens";        
+        $authorName = "Charles Dickens";
+        echo $authorName;
     }
-    $variableFunctionName = "getAuthor";
-    $variableFunctionName();
+    setAuthorName();
+    echo authorName();
     ?>
