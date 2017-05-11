@@ -6,12 +6,12 @@
     "poetic" => "William",
     "Mark Twain"
     );
-    unset($authors[1], $authors[0]);
+    unset($first[1], $first[0]);
     unset($second[brilliant]);
-    print_r($authors);
+    print_r($first);
     echo "<br>";
+    unset($first);
+    print_r($first);
     echo "<br>";
-    print_r($second);
-    unset($second);
-    print_r($second);
+    print_r($second);    
     ?>
