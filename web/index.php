@@ -9,5 +9,5 @@
     echo $firstType[1]."<br>";
     echo $authors["quarky"]."<br>";
     echo array_key_exists(2, $firstType)."<br>";
-    echo array_key_exists("Mark Twain", $authors);
+    echo array_key_exists("poetic", $authors);
     ?>
