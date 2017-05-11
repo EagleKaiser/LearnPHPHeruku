@@ -3,8 +3,8 @@
     $secondType = ["charles", "hello", "world", "Array"];
     $allValues = [10, 1.3, "hello", true];
     print_r($authors);
-    echo "\r";
+    echo "<br>";
     print_r($secondType);
-    echo "\r";
+    echo "<br>";
     print_r($allValues);
     ?>
