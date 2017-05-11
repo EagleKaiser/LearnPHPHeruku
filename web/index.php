@@ -1,7 +1,6 @@
-<?php
-    $authors = array("charles", "hello", "world", "Array", 13);
-    array_push($authors, "Louisa");
-    $authors[] = "Montgomery";
-    $authors["Hi"] = "Montgomery";
+ <?php
+    $authors = array("charles", "hello", "world", "Array");
+    $lastValue = array_pop($authors);
+    echo $lastValue;
     print_r($authors);
     ?>
