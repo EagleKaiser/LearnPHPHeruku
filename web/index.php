@@ -1,10 +1,12 @@
 <?php
-$firstType = array("charles", "hello", "world", "Array");
-$secondType = ["charles", "hello", "world", "Array"];
-$allValues = [10, 1.3, "hello", true];
-print_r($firstType);
-echo "<br>";
-print_r($secondType);
-echo "<br>";
-print_r($allValues);
-?>
+    $firstType = array("charles", "hello", "world", "Array");
+    $authors = array(
+    "quarky" => "Charles Dickens",
+    "brilliant" => "Jane",
+    "poetic" => "William",
+    "Mark Twain"
+    );
+    echo $firstType[1]."<br>";
+    echo $authors["quarky"]."<br>";
+    echo array_key_exists(2, firstType);
+    ?>
