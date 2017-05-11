@@ -1,8 +1,10 @@
 <?php
-    $quote = "Hello world";
-    $varArray = str_split($quote);
-    Print_r($varArray);
-    echo "<br>";
-    $varArray = str_split($quote, 3);
-    Print_r($varArray);
+    $firstType = array("charles", "hello", "world", "Array");
+    $secondType = ["charles", "hello", "world", "Array"];
+    $allValues = [10, 1.3, "hello", true];
+    print_r($authors);
+    echo "\r";
+    print_r($secondType);
+    echo "\r";
+    print_r($allValues);
     ?>
