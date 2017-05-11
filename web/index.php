@@ -1,9 +1,10 @@
 <?php
-    $authors = array(
-    "quarky" => "Charles Dickens",
-    10 => "Jane",
-    "poetic" => "William",
-    "Mark Twain"
-    );
-    print_r($authors);
-    ?>
+$firstType = array("charles", "hello", "world", "Array");
+$secondType = ["charles", "hello", "world", "Array"];
+$allValues = [10, 1.3, "hello", true];
+print_r($firstType);
+echo "<br>";
+print_r($secondType);
+echo "<br>";
+print_r($allValues);
+?>
