@@ -9,6 +9,8 @@
     unset($authors[1], $authors[0]);
     unset($second[brilliant]);
     print_r($authors);
+    echo "<br>";
+    echo "<br>";
     print_r($second);
     unset($second);
     print_r($second);
