@@ -25,6 +25,7 @@
     }
     $myObject = new Person();
     echo $myObject->getFirstName()."<br>";
+    echo $myObject->getFirstName()."<br>";
     $myObject->setFirstName("Sam");
     echo $myObject->getFirstName();
     //output: Sam
