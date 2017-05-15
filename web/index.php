@@ -8,7 +8,7 @@
         public $yearBorn;
         function __construct($tempFirst = "", $tempLast = "", $tempBorn = "")
         {
-            echo "Person Constructor" .PHP_EOL;
+            echo "Person Constructor<br>";
             $this->firstName = $tempFirst;
             $this->lastName = $tempLast;
             $this->yearBorn = $tempBorn;
@@ -35,7 +35,6 @@
             return $this->penName.PHP_EOL;
         }
     }
-    $newAuthor = new Author();
     $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
     echo $newAuthor->getFullName();
     //output:
