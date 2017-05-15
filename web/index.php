@@ -1,11 +1,10 @@
- <?php
-   
+<?php   
      class Person
     {
         const AVG_LIFE_SPAN = 79;
-        public $firstName;
-        public $lastNamens;
-        public $yearBorn;
+        protected $firstName;
+        protected $lastNamens;
+        protected $yearBorn;
         function __construct($tempFirst = "", $tempLast = "", $tempBorn = "")
         {
             echo "Person Constructor<br>";
@@ -13,15 +12,15 @@
             $this->lastName = $tempLast;
             $this->yearBorn = $tempBorn;
         }
-        public function getFirstName()
+        protected function getFirstName()
         {
             return $this->firstName;
         }
-        public function setFirstName($tempName)
+        protected function setFirstName($tempName)
         {
             $this->firstName = $tempName;
         }
-        public function getFullName()
+        protected function getFullName()
         {
             echo "Person->getFullName()<br>";
             return $this->firstName." ".$this->lastName."<br>";
@@ -29,25 +28,16 @@
     }
     class Author extends Person
     {
-        public $penName = "Mark Twain";
+        protected $penName = "Mark Twain";
         public function getPenName()
         {
             return $this->penName."<br>";
         }
-        //child methods with same name will overide parents method
         public function getFullName()
         {
-            echo "Author->getFullName()<br>";
-            //firstName and lastName are parents attriputes that child can access
-            return $this->firstName." ".$this->lastName."<br>";
+            echo "Author->getCompleteNme()<br>";
+            return $this->firstName." ".$this->lastName."a.k.a. ".$this->penName."<br>";
         }
     }
-    //Author will access parent method getFullName()
     $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
     echo $newAuthor->getFullName();
-    echo $newAuthor->getPenName();
-    //output
-    //Person Constructor
-    //Author->getFullName()
-    //Samuel Langhorne Clemns
-    ?>
