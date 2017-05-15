@@ -45,9 +45,9 @@
     //Author will access parent method getFullName()
     $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
     echo $newAuthor->getFullName();
-
-    //output:
+    echo $newAuthor->getPenName();
+    //output
     //Person Constructor
-    //Person->getFullName()
+    //Author->getFullName()
     //Samuel Langhorne Clemns
     ?>
