@@ -1,4 +1,5 @@
 <?php
+   
      class Person
     {
         const AVG_LIFE_SPAN = 79;
@@ -6,12 +7,12 @@
         public $lastNamens;
         public $yearBorn;
 
-        function __construct()
+        function __construct($tempFirst = "", $tempLast = "", $tempBorn = "")
         {
             echo "I'm in the constructor";
-            $this->firstName = "Samel";
-            $this->lastName = "Clemens";
-            $this->yearBorn = "1988";
+            $this->firstName = $tempFirst;
+            $this->lastName = $tempLast;
+            $this->yearBorn = $tempBorn;
         }
 
         public function getFirstName()
@@ -23,10 +24,6 @@
             $this->firstName = $tempName;
         }
     }
-    $myObject = new Person();
-    echo $myObject->getFirstName()."<br>";
-    echo $myObject->getFirstName()."<br>";
-    $myObject->setFirstName("Sam");
+    $myObject = new Person("Samuel Langhorne", "Clemens", 1899);
     echo $myObject->getFirstName();
-    //output: Sam
     ?>
