@@ -1,5 +1,5 @@
 <?php
-    $second = array(
+    $authors = array(
     "quarky" => "Charles Dickens",
     "brilliant" => "Jane",
     "poetic" => "William",
