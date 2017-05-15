@@ -2,9 +2,17 @@
      class Person
     {
         const AVG_LIFE_SPAN = 79;
-        public $firstName = "Samel";
-        public $lastName = "Clemens";
-        public $yearBorn = "1988";
+        public $firstName;
+        public $lastNamens;
+        public $yearBorn;
+
+        function __construct()
+        {
+            echo "I'm in the constructor";
+            $this->$firstName = "Samel";
+            $this->$lastName = "Clemens";
+            $this->$yearBorn = "1988";
+        }
 
         public function getFirstName()
         {
@@ -16,6 +24,8 @@
         }
     }
     $myObject = new Person();
+    echo $myObject->getFirstName()."<br>";
     $myObject->setFirstName("Sam");
     echo $myObject->getFirstName();
+    //output: Sam
     ?>
