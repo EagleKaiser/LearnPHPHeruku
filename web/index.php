@@ -36,6 +36,7 @@
         }
     }
     $newAuthor = new Author();
+    $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
     //output:
     //
     ?>
