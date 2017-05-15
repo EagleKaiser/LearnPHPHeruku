@@ -13,5 +13,6 @@
                 "Louisa May" => array("Litle Women")
                 )
             ];
-    echo count($authors2); 
+    echo count($authors2)."<br>";
+    echo count($authors2, 1);  
     ?>
