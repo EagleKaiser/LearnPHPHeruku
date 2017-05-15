@@ -6,10 +6,10 @@
     "poetic" => "William",
     "Mark Twain"
     );
-    sort($first);
+    asort($first);
     print_r($first);
     echo "<br>";
-    sort($second);
+    asort($second);
     print_r($second);
 
     ?>
