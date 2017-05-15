@@ -23,8 +23,8 @@
         }
         public function getFullName()
         {
-            echo "Person->getFullName()".PHP_EOL;
-            return $this->firstName." ".$this->lastName.PHP_EOL;
+            echo "Person->getFullName()<br>";
+            return $this->firstName." ".$this->lastName."<br>";
         }
     }
     class Author extends Person
@@ -32,7 +32,7 @@
         public $penName = "Mark Twain";
         public function getPenName()
         {
-            return $this->penName.PHP_EOL;
+            return $this->penName."<br>";
         }
     }
     $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
