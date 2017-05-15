@@ -1,4 +1,4 @@
-<?php
+ <?php
    
      class Person
     {
@@ -6,15 +6,13 @@
         public $firstName;
         public $lastNamens;
         public $yearBorn;
-
         function __construct($tempFirst = "", $tempLast = "", $tempBorn = "")
         {
-            echo "I'm in the constructor";
+            echo "Person Constructor" .PHP_EOL;
             $this->firstName = $tempFirst;
             $this->lastName = $tempLast;
             $this->yearBorn = $tempBorn;
         }
-
         public function getFirstName()
         {
             return $this->firstName;
@@ -23,7 +21,21 @@
         {
             $this->firstName = $tempName;
         }
+        public function getFullName()
+        {
+            echo "Person->getFullName()".PHP_EOL;
+            return $this->firstName." ".$this->lastName.PHP_EOL;
+        }
     }
-    $myObject = new Person("Samuel Langhorne", "Clemens", 1899);
-    echo $myObject->getFirstName();
+    class Author extends Person
+    {
+        public $penName = "Mark Twain";
+        public function getPenName()
+        {
+            return $this->penName.PHP_EOL;
+        }
+    }
+    $newAuthor = new Author();
+    //output:
+    //
     ?>
