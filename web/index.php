@@ -6,7 +6,7 @@
     "poetic" => "William",
     "Mark Twain"
     );
-    sort($authors);
-    print_r($authors);
+    sort($first);
+    print_r($first);
 
     ?>
