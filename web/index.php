@@ -1,5 +1,5 @@
 <?php
-    $authors = ["charles", "jane", "William"];
+    $authors = [];
     $count = count($authors);
     switch($count)
     {
