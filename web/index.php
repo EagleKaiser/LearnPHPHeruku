@@ -1,12 +1,12 @@
 <?php
-    $var1 = (6 < 7);
-    $var2 = (8 ==8);
-
-    $var3 = true;
-    $var4 = false;
-
-    var_dump($var1);
-    var_dump($var2);
-    var_dump($var3 && $var4);
-
+    $authors = ["charles", "jane", "William"];
+    $count = count($authors);
+    if($count > 0)
+    {
+        echo "there is a total of ".$count."authors";
+    }
+    else 
+    {
+        echo "there are no authors";
+    }
     ?>
