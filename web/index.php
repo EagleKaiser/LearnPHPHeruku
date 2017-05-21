@@ -8,7 +8,8 @@
         }
     }
     echo Foo::$centuryPopular;
-    
-    
+    echo "<br>";
+    echo Foo::getCentury();
+
 
     ?>
