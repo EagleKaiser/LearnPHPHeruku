@@ -10,4 +10,4 @@
     echo Foo::$centuryPopular;
     
 
-    >?
+    ?>
