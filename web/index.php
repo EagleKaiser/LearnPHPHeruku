@@ -1,12 +1,13 @@
 <?php
     $authors = ["charles", "jane", "William"];
     $count = count($authors);
-    if($count > 0)
+    switch($count)
     {
-        echo "there is a total of ".$count."authors";
-    }
-    else 
-    {
-        echo "there are no authors";
+        case 0:
+            echo "there are no authors";
+        case 1:
+            echo "there is 1 authors";
+        default:
+            echo "there is a total of ".$count." authors";
     }
     ?>
