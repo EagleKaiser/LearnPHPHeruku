@@ -1,10 +1,10 @@
-<?php   
-     class Person
+<?php
+    class Person
     {
         const AVG_LIFE_SPAN = 79;
-        protected $firstName;
-        protected $lastNamens;
-        protected $yearBorn;
+        private $firstName;
+        private $lastNamens;
+        private $yearBorn;
         function __construct($tempFirst = "", $tempLast = "", $tempBorn = "")
         {
             echo "Person Constructor<br>";
@@ -12,15 +12,15 @@
             $this->lastName = $tempLast;
             $this->yearBorn = $tempBorn;
         }
-        protected function getFirstName()
+        private function getFirstName()
         {
             return $this->firstName;
         }
-        protected function setFirstName($tempName)
+        private function setFirstName($tempName)
         {
             $this->firstName = $tempName;
         }
-        protected function getFullName()
+        private function getFullName()
         {
             echo "Person->getFullName()<br>";
             return $this->firstName." ".$this->lastName."<br>";
@@ -35,9 +35,17 @@
         }
         public function getFullName()
         {
-            echo "Author->getCompleteNme()<br>";
+            echo "Author->getCompleteName()<br>";
+            //access protected properties through this public method
             return $this->firstName." ".$this->lastName."a.k.a. ".$this->penName."<br>";
         }
     }
     $newAuthor = new Author("Samuel Langhorne", "Clemns", 1899);
     echo $newAuthor->getFullName();
+    //output
+    //Person Constructor
+    //Author->getCompleteNme()
+    //Samuel Langhorne Clemnsa.k.a. Mark Twain    
+    ?>
+
+    
