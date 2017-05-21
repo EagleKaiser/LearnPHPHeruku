@@ -1,7 +1,8 @@
 <?php
     $authors = ["charles", "jane", "William"];
     $count = count($authors);
-
-    $outcome = ($count > 0) ? "Author Total: ".$count : "noAuthors";
+    $outcome = $count ? $count : "Count unavailable";
+    echo "<br>;
+    $outcome = $count ?? "count unavailable";
     echo $outcome;
     ?>
