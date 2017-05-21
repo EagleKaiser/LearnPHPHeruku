@@ -3,4 +3,7 @@
     echo $increment++."<br>";
     echo $increment."<br>";
     echo ++$increment."<br>";    
+    echo $increment--."<br>";
+    echo $increment."<br>";
+    echo --$increment."<br>"; 
     ?>
