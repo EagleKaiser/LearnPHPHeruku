@@ -1,22 +1,13 @@
+<?php
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-    <?php
-    $readingIsFun = true;
-    $authors = ["charles", "jane", "William"];
-    $count = count($authors);
-    
-    if($count > 0) :
-        echo "there is a total of ".$count." authors<br>";
-    else :
-        echo "there are no authors<br>";
-    endif;
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
-    $i = 0;
-    while($readingIsFun) :   
-        echo "reading is fun"."<br>";
-        $readingIsFun = false;
-    endwhile;
+$conn = new mysqli($server, $username, $password, $db);
 
-    for($i = 0; $i <5; $i++) :
-        echo "Reading is fun";
-    endfor
-    ?>
+
+
+?>
